@@ -1,18 +1,19 @@
 * {
     padding: 0;
-    margin: 0;
+
 }
 
 body {
-     
-    background-color:#F8F9FA;
+
+    background-color: #F8F9FA;
+    margin: 0 auto;
 }
 
 :root {
-    --background-color:#F4F6F4;
+    --background-color: #F4F6F4;
     --secondary-background-color: #14342B;
     --primary-color: #14342B;
-    --accent-color:#D97706;
+    --accent-color: #D97706;
     --secondary-accent-color: #3B7A57;
     --font-family: 'Arial', sans-serif;
 }
@@ -21,7 +22,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px  ;
+    padding: 15px;
     background-color: var(--secondary-background-color);
     color: white;
 
@@ -45,5 +46,20 @@ nav {
 
 .logo-img {
     width: 200px;
-    border-radius:30%;
+    border-radius: 30%;
+}
+
+.card {
+    border: 2px solid black;
+    margin: 2px;
+    padding: 2px;
+}
+
+.card-img {
+    width: 350px;
+
+}
+
+span {
+    font-weight: bolder;
 }
