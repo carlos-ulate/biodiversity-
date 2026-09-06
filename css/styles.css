@@ -4,14 +4,14 @@
 }
 
 body {
-
+    height: 100dvh;
     background-color: #F8F9FA;
     margin: 0 auto;
 }
 
 :root {
     --background-color: #F4F6F4;
-    --secondary-background-color: #14342B;
+    --secondary-background-color: #1E4D3E;
     --primary-color: #14342B;
     --accent-color: #D97706;
     --secondary-accent-color: #3B7A57;
@@ -24,7 +24,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: var(--secondary-background-color);
+    background-color: var(--primary-color);
 
 
     ul {
@@ -45,7 +45,7 @@ nav {
         color: var(--accent-color);
     }
 
-    .login{
+    .login {
         font-size: x-large;
     }
 }
@@ -67,7 +67,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary-background-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
 
     h2 {
@@ -107,18 +107,28 @@ nav {
     font-size: large;
     background-color: var(--secondary-background-color);
     padding-bottom: 5px;
-    
-    
-    h3{
+
+
+    h3 {
         color: var(--accent-color);
     }
 
-    h4{
+    h4 {
         color: var(--secondary-accent-color);
     }
 
-    p{
+    p {
         color: var(--text-color);
+    }
+
+    box-shadow: 10px 10px 20px 5px rgba(8, 155, 113, 0.5);
+    -webkit-box-shadow: 10px 10px 20px 5px rgba(8, 155, 113, 0.5);
+
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 10px 10px 20px 5px rgba(4, 98, 71, 0.5);
+        -webkit-box-shadow: 10px 10px 20px 5px rgba(4, 98, 71, 0.5);
     }
 }
 
@@ -142,6 +152,47 @@ nav {
     object-fit: cover;
     border-radius: 15px;
 
+}
+
+.column-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    /* <--- Limita el ancho máximo */
+    margin: 40px auto;
+    /* <--- Centra todo el bloque en la página */
+    padding: 0 20px;
+    column-rule: 3px solid var(--secondary-accent-color);
+    color: var(--text-color);
+
+    h3 {
+        color: var(--accent-color);
+    }
+
+    .column {
+        flex: 1;
+        text-align: center;
+        font-size: large;
+        background-color: var(--primary-color);
+        padding: 20px;
+
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            /* Línea divisoria suave */
+            margin: 10px 0;
+        }
+
+    }
+
+    .destacado {
+        background-color: var(--secondary-background-color);
+    }
+
+    p {
+        padding: 10px 0;
+    }
 }
 
 span {
