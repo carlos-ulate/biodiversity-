@@ -16,28 +16,29 @@
             </div>
 
             <ul>
-                <li>Acerca Nosotros</li>
-                <li>Tours</li>
-                <li>Promociones</li>
-                <li>Contacto</li>
+                <li><a href="#nosotros">Sobre Nosotros </a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#paquetes">Paquetes</a></li>
+                <li><a href="#promos">Promociones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
 
                 <li><a href="">Reservar Ahora</a></li>
 
             </ul>
 
-            <a href="/pages/login.html">Iniciar Sesión</a>
+            <a class="login" href="/pages/login.html">Iniciar Sesión</a>
         </nav>
 
     </header>
 
     <main>
-        <div>
+        <div class="main-title">
             <h1>Biósfera Cr</h1>
 
         </div>
-        <div class="hero-container">
+        <div class="hero-container" id="nosotros">
             <div class="hero-intro">
-                <h2>Sobre Nosotros/Introduccion</h2>
+                <h2>Sobre Nosotros</h2>
                 <p>En Biósfera Cr no vendemos viajes masivos; diseñamos puentes entre las personas y los ecosistemas más
                     puros del planeta. Costa Rica alberga el 6.5% de la biodiversidad mundial en un territorio diminuto,
                     y nuestra misión es guiarte a través de ella de forma consciente.</p>
@@ -51,23 +52,24 @@
             </div>
         </div>
 
-        <div class="container-tours">
+        <div class="container-tours" id="tours">
             <div class="tour-title">
                 <h2>Nuestros Tours</h2>
             </div>
+            <!-- tarjetas -->
             <div class="container-card">
                 <div class="card">
                     <img class="card-img" src="/assets/images/Corcovado.webp">
-                    <h2>Pacífico Sur (Osa y Corcovado)</h2>
-                    <h3>La Amazonía del Mar</h3>
+                    <h3>Pacífico Sur (Osa y Corcovado)</h3>
+                    <h4>La Amazonía del Mar</h4>
                     <p>El rincón biológicamente más intenso del planeta. Playas salvajes flanqueadas por junglas densas
                         donde habitan los cuatro tipos de monos del país y el escurridizo jaguar.</p>
                 </div>
 
                 <div class="card">
                     <img class="card-img" src="/assets/images/monteverde.jpg">
-                    <h2>Bosque Nuboso (Monteverde)</h2>
-                    <h3>El Reino de la Niebla</h3>
+                    <h3>Bosque Nuboso (Monteverde)</h3>
+                    <h4>El Reino de la Niebla</h4>
                     <p>Ecosistemas de altura cubiertos de musgo, helechos gigantes y el hogar del majestuoso Quetzal.
                         Aquí la biodiversidad se respira entre las nubes y los puentes colgantes.</p>
 
@@ -75,16 +77,16 @@
 
                 <div class="card">
                     <img class="card-img" src="/assets/images/Arenal.webp">
-                    <h2>Volcánica y Llanuras (Arenal y La Fortuna)</h2>
-                    <h3>Fuego y Selva</h3>
+                    <h3>Volcánica y Llanuras (Arenal y La Fortuna)</h3>
+                    <h4>Fuego y Selva</h4>
                     <p>El balance perfecto entre la imponente geología del Volcán Arenal, las aguas termales naturales y
                         los senderos de bosque lluvioso repletos de perezosos y tucanes.</p>
                 </div>
 
                 <div class="card">
                     <img class="card-img" src="/assets/images/cahuita.jpg">
-                    <h2>Caribe Tropical (Tortuguero y Cahuita)</h2>
-                    <h3>La Cultura del Agua</h3>
+                    <h3>Caribe Tropical (Tortuguero y Cahuita)</h3>
+                    <h4>La Cultura del Agua</h4>
                     <p>Canales laberínticos donde el desove de las tortugas verdes y los arrecifes de coral vivos dictan
                         el ritmo de la vida silvestre.</p>
                 </div>
@@ -92,10 +94,10 @@
 
         </div>
 
-        <div class="column-container">
+        <div class="column-container" id="paquetes">
 
             <div class="column">
-                <h2>Paquete 1: Raíces Esenciales</h2>
+                <h3>Paquete 1: Raíces Esenciales</h3>
 
                 <p><span>Enfoque:</span> Viajeros independientes y amantes de la fotografía.</p>
                 <hr>
@@ -110,7 +112,7 @@
             </div>
 
             <div class="column destacado">
-                <h2>Paquete 2: Biósfera Inmersiva ⭐ (El más popular)</h2>
+                <h3>Paquete 2: Biósfera Inmersiva ⭐ (El más popular)</h3>
                 <p><span>Enfoque:</span>Amantes de la naturaleza pura y la desconexión.</p>
                 <hr>
                 <p><span>Incluye:</span>10 días / 9 noches explorando Monteverde y la Península de Osa (Corcovado).
@@ -125,7 +127,7 @@
             </div>
 
             <div class="column">
-                <h2>Paquete 3: Legado Familiar</h2>
+                <h3>Paquete 3: Legado Familiar</h3>
                 <p><span>Enfoque:</span>Familias y grupos multigeneracionales. </p>
                 <hr>
                 <p><span>Incluye:</span>8 días / 7 noches en el Caribe de Tortuguero y las faldas del Volcán Tenorio
@@ -159,7 +161,7 @@
             </ul>
         </div>
 
-        <div class="promos-container">
+        <div class="promos-container" id="promos">
             <div>
                 <h3>Promoción de Temporada Verde (Mayo a Noviembre)</h3>
                 <p>Explora Costa Rica en su época más vibrante. El bosque está más vivo que nunca y los animales más
@@ -176,7 +178,7 @@
             </div>
 
 
-            <div class="form-container">
+            <div class="form-container" id="contacto">
                 <h2>Para cotizaciones llenar el siguiente formulario</h2>
                 <form action="">
                     <label for="nombre"> Nombre</label>
@@ -204,10 +206,40 @@
                     <button type="submit">Enviar</button>
                 </form>
             </div>
+        </div>
     </main>
 
     <footer>
+        <div class="footer-container">
+            <div class="footer-col brand">
+                <img src="assets/images/logo.png" alt="Biosfera-Logo" class="footer-logo">
+                <p>Diseñamos puentes entre las personas y los ecosistemas más puros de Costa Rica.</p>
+            </div>
 
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#tours">Tours</a></li>
+                    <li><a href="#paquetes">Paquetes</a></li>
+                    <li><a href="#promos">Promociones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📍 Costa Rica</p>
+                <p>📧 info@biosferacr.com</p>
+                <p>📱 +506 8888-8888</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Biósfera Cr. Todos los derechos reservados. | Operadora Turística Carbono Neutro</p>
+        </div>
+
+        </div>
 
     </footer>
 </body>

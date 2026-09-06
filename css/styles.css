@@ -1,6 +1,6 @@
 * {
     padding: 0;
-
+    margin: 0;
 }
 
 body {
@@ -16,6 +16,7 @@ body {
     --accent-color: #D97706;
     --secondary-accent-color: #3B7A57;
     --font-family: 'Arial', sans-serif;
+    --text-color: white;
 }
 
 nav {
@@ -24,23 +25,28 @@ nav {
     align-items: center;
     padding: 15px;
     background-color: var(--secondary-background-color);
-    color: white;
+
 
     ul {
         display: flex;
         gap: 20px;
+        font-size: x-large;
 
     }
 
     li {
         list-style: none;
         flex-direction: row;
-
+        color: var(--accent-color);
     }
 
     a {
         text-decoration: none;
-        color: white;
+        color: var(--accent-color);
+    }
+
+    .login{
+        font-size: x-large;
     }
 }
 
@@ -49,17 +55,123 @@ nav {
     border-radius: 30%;
 }
 
+
+.main-title {
+    text-align: center;
+    margin: 5px 0;
+    color: var(--accent-color);
+    font-size: x-large;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
+
+    h2 {
+        text-align: center;
+        margin: 10px;
+        color: var(--secondary-accent-color);
+    }
+
+    .hero-intro {
+        flex: 1;
+        font-size: larger;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    .hero-image {
+
+        flex: 1;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
 .card {
     border: 2px solid black;
     margin: 2px;
     padding: 2px;
+    border-radius: 15px;
+    width: 350px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: large;
+    background-color: var(--secondary-background-color);
+    padding-bottom: 5px;
+    
+    
+    h3{
+        color: var(--accent-color);
+    }
+
+    h4{
+        color: var(--secondary-accent-color);
+    }
+
+    p{
+        color: var(--text-color);
+    }
+}
+
+.tour-title {
+    text-align: center;
+    margin: 10px;
+    color: var(--accent-color);
+    font-size: x-large;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+
+
 }
 
 .card-img {
-    width: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 
 }
 
 span {
     font-weight: bolder;
+}
+
+
+
+
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+
+
+    img {
+        width: 200px;
+
+    }
+
+    ul {
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    li {
+        margin: 5px 0;
+    }
 }
