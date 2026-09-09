@@ -32,11 +32,11 @@
     </header>
 
     <main>
-        <div class="main-title">
+        <section class="main-title">
             <h1>Biósfera Cr</h1>
 
-        </div>
-        <div class="hero-container" id="nosotros">
+        </section>
+        <section class="hero-container" id="nosotros">
             <div class="hero-intro">
                 <h2>Sobre Nosotros</h2>
                 <p>En Biósfera Cr no vendemos viajes masivos; diseñamos puentes entre las personas y los ecosistemas más
@@ -50,9 +50,9 @@
             <div class="hero-image">
                 <img src="/assets/images/banner.png" alt="Imagen de la Biósfera">
             </div>
-        </div>
+        </section>
 
-        <div class="container-tours" id="tours">
+        <section class="container-tours" id="tours">
             <div class="tour-title">
                 <h2>Nuestros Tours</h2>
             </div>
@@ -92,9 +92,9 @@
                 </div>
             </div>
 
-        </div>
+        </section>
 
-        <div class="column-container" id="paquetes">
+        <section class="column-container" id="paquetes">
 
             <div class="column">
                 <h3>Paquete 1: Raíces Esenciales</h3>
@@ -137,10 +137,10 @@
                 <hr>
 
             </div>
-        </div>
+        </section>
 
 
-        <div class="tour-container">
+        <section class="tour-container">
             <ul>
                 <li>
                     <span>Expedición Nocturna de Bio-Luminiscencia:</span>
@@ -159,16 +159,15 @@
                     enfocados en el avistamiento de aves raras.
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <div class="promos-container" id="promos">
+        <section class="promos-container" id="promos">
             <div>
                 <h3>Promoción de Temporada Verde (Mayo a Noviembre)</h3>
                 <p>Explora Costa Rica en su época más vibrante. El bosque está más vivo que nunca y los animales más
                     activos. Recibe un 15% de descuento directo en el paquete Biósfera Inmersiva o una excursión
                     nocturna gratuita al reservar cualquier paquete de más de 5 noches.</p>
             </div>
-
             <div>
                 <h3>Descuento "Viajero Carbono Cero"</h3>
                 <p>Si demuestras que viajas ligero o reservas tus vuelos internacionales con opción de compensación de
@@ -177,13 +176,17 @@
                 </p>
             </div>
 
+        </section>
 
-            <div class="form-container" id="contacto">
-                <h2>Para cotizaciones llenar el siguiente formulario</h2>
-                <form action="">
+        <section class="contact-wraper">
+            <div class="contact-container" id="contacto">
+                <div class="form-title">
+                    <h2>Para cotizaciones llenar el siguiente formulario</h2>
+                </div>
+                <form action="" class="form-container">
                     <label for="nombre"> Nombre</label>
                     <input type="text" id="nombre" name="nombre" required placeholder="Carlos" minlength="3"
-                        maxlength="15"><br>
+                        maxlength="15">
                     <label for="apellido">Apellido</label>
                     <input type="text" id="apellido" name="apellido" required placeholder="Ulate" minlength="3"
                         maxlength="20">
@@ -204,9 +207,10 @@
                         <option value="quetzal-orquideas">Ruta del Quetzal y Orquídeas de Altura</option>
                     </select>
                     <button type="submit">Enviar</button>
+
                 </form>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
@@ -239,7 +243,7 @@
             <p>&copy; 2026 Biósfera Cr. Todos los derechos reservados. | Operadora Turística Carbono Neutro</p>
         </div>
 
-        </div>
+
 
     </footer>
 </body>
